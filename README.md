@@ -1,0 +1,1 @@
+A (very) small library to join [Roact](https://github.com/roblox/roact) and [Flipper](https://github.com/Reselim/Flipper).
