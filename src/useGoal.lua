@@ -16,7 +16,7 @@ end
 local function useGoal(goal, hooks)
 	local motor = useMotor(getInitialValue(goal), hooks)
 	motor:setGoal(goal)
-	return getBinding(motor)
+	return getBinding(motor), motor
 end
 
 return useGoal
