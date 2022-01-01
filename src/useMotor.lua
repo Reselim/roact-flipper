@@ -11,7 +11,7 @@ local function createMotor(initialValue)
 	end
 end
 
-local function useMotor(initialValue, hooks)
+local function useMotor(hooks, initialValue)
 	return hooks.useValue(createMotor(initialValue)).value
 end
 
