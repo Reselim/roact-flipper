@@ -13,11 +13,13 @@ end
 
 local function useMotor(hooks, initialValue)
 	local motor = hooks.useValue(createMotor(initialValue)).value
-	hooks.useEffect(function ()
-		return function ()
+
+	hooks.useEffect(function()
+		return function()
 			motor:destroy()
 		end
 	end, {})
+	
 	return motor
 end
 
